@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>ÅPARK KOLLEGIET</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+    <header>
+
+
+
+        <div id="infobartop">
+
+
+
+            <div id="uret">
+                <div id="clock">
+                    <div id="hrMin"></div>
+                    <div id="sec"></div>
+                </div>
+                <div id="date"></div>
+            </div>
+
+            <img id="logoH" src="img/logo.png" alt="logo">
+
+            <div id="sprog">
+                <img src="img/denmark.svg" alt="DK">
+                <img src="img/united-kingdom.svg" alt="ENG">
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+
+
+    <main>
+        <!-- herunder kan du se vejroplysningerne 
+       <img id="help" class="maskot" src="img/icons/maskot-gul.png" alt="Åpark Maskot" onclick="runAnimation()"/>
+-->
+
+
+
+
+
+
+
+
+
+
+        <!-- Trigger/Open The Modal -->
+        <figure id="myBtnx" class="info">
+            <img class="maskot" src="img/icons/maskot-gul.png">
+        </figure>
+
+        <!-- The Modal -->
+        <div id="myModalx" class="modalx">
+
+            <!-- Modal content -->
+            <div class="modal-contentx">
+                <span class="closex">&times;</span>
+
+                <img id="infografik" src="img/infographic-ux-sort.gif">
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <!-- herunder kan du se vejroplysningerne -->
+        <div id="result"></div>
+
+        <div id="bgImg"></div>
+
+
+
+
+
+
+        <!--                                             KNAPPER                                 -->
+
+        <figure id="myBtn" class="knap knap-motion">
+            <h3 class="knap-overskrift">Motionsrum</h3>
+
+            <figure>
+                <img class="ikon" src="img/icons/traening%20(1).png" alt="ikon">
+            </figure>
+            <p class="knapP"><strong class="tal">6</strong> personer</p>
+            <img class="pil" src="img/icons/gul-pil.png" alt="drop down">
+        </figure>
+
+        <figure id="myBtn1" class="knap knap-aktiv1">
+            <h3 class="knap-overskrift">Aktivitestrum</h3>
+            <figure>
+                <img class="ikon" src="img/icons/aktivitet.png" alt="ikon">
+            </figure>
+            <p class="knapP"><strong class="tal">3</strong> personer</p>
+            <img class="pil" src="img/icons/gul-pil.png" alt="drop down">
+        </figure>
+
+        <figure id="myBtn2" class="knap knap-aktiv2">
+            <h3 class="knap-overskrift">Aktivitestrum</h3>
+
+            <figure>
+                <img class="ikon" src="img/icons/aktivitet.png" alt="ikon">
+            </figure>
+            <p class="knapP"><strong class="tal">2</strong> personer</p>
+            <img class="pil" src="img/icons/gul-pil.png" alt="drop down">
+        </figure>
+
+        <figure id="myBtn3" class="knap knap-fk">
+            <h3 class="knap-overskrift">Fælleskøkken</h3>
+
+            <figure>
+                <img class="ikon" src="img/icons/koekken.png" alt="ikon">
+            </figure>
+            <p class="knapP"><strong class="tal">0</strong> personer</p>
+            <img class="pil" src="img/icons/gul-pil.png" alt="drop down">
+        </figure>
+
+        <figure id="myBtn4" class="knap knap-fr">
+            <h3 class="knap-overskrift">Fællesrum</h3>
+
+            <figure>
+                <img class="ikon" src="img/icons/dance-gul.png" alt="ikon">
+            </figure>
+            <p class="knapP"><strong class="tal">2</strong> personer</p>
+            <img class="pil" src="img/icons/gul-pil.png" alt="drop down">
+        </figure>
+
+
+        <!--                                             KNAPPER SLUT                                -->
+
+
+        <!--                                           Linjer til knapper                            -->
+        <vr class="linje l-aktiv1"></vr>
+        <vr class="linje l-aktiv2"></vr>
+        <vr class="linje l-motion"></vr>
+        <vr class="linje l-f"></vr>
+        <hr class="lille l-lille1">
+        <hr class="lille l-lille2">
+
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 class="mHeader">6</h2>
+                    <p class="mPa">Bruger rummet nu</p>
+                </div>
+
+
+                <div class="modal-body">
+
+                    <h1 class="mHeader2">MOTIONSRUM</h1>
+                    <p class="mPa2">Blok1- stuen - rum 1.1.8</p>
+                    <br>
+
+
+                    <h2 class="mHeader3">Hvem er her og hvad laver de</h2>
+                    <div class="mPa1">
+                        <p><strong>Trine G</strong> - Prøver at være sund</p>
+                        <p><strong>Christian</strong> -</p>
+                        <p><strong>Simone</strong> - Giver den max gas til høj musik</p>
+                        <p><strong>+3</strong> andre</p>
+                    </div>
+                </div>
+
+
+
+                <hr>
+
+
+                <div class="modal-footer">
+
+                    <div>
+                        <h2 class="mHeader3">Faciliteter</h2>
+                        <ul>
+                            <li>Løbebånd</li>
+                            <li>Motionscykel</li>
+                            <li>Vægte</li>
+                            <li>Multigym maskiner</li>
+                            <li>Måtter, Bænke, Elastik mm.</li>
+                            <li>Romaskine</li>
+                        </ul>
+                    </div>
+
+
+                    <vl class="vl"></vl>
+
+                    <div>
+                        <h2 class="mHeader3">Regler</h2>
+
+                        <div id="iconContainer">
+                            <img class="imgIcon" src="img/icons/spray.png" alt="">
+                            <img class="imgIcon" src="img/icons/love.png" alt="">
+                            <img class="imgIcon" src="img/icons/weightlift.png" alt="">
+                        </div>
+
+                        <ul class="regl-liste">
+                            <li>Tør Udstyr af efter brug</li>
+                            <li>Vis hensyn til andre brugere</li>
+                            <li>Sæt udstyr på plads igen</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Rain -->
+        <canvas id="canvas" width="1920" height="941"></canvas>
+
+
+        <!-- Clouds -->
+        <section id="skyer" class="clouds">
+
+            <div class="cloud cloud1"></div>
+            <div class="cloud cloud2"></div>
+            <div class="cloud cloud3"></div>
+            <div class="cloud cloud4"></div>
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <footer>
+        <div id="fContainer">
+            <h2 id="footInfo">INFO</h2>
+            <div class="tcontainer">
+                <div class="ticker-wrap">
+                    <div class="ticker-move">
+                        <div class="ticker-item">Fællesrummet kan ikke lejes juleaften, nytårsaften samt i perioden 15. maj til 15. august grundet eksamensperiode og sommerferie.</div>
+                        <div class="ticker-item">Fællesrummet kan MAX. bookes 3 måneder i forvejen (Dvs. hvis du vil leje det den 2. maj, kan du tidligst booke den 2. februar). Forespørgsler sendt for tidligt betragtes som ugyldige. Det er kun kollegiets udvalg, der har mulighed for at booke længere forud.</div>
+                        <div class="ticker-item">Rummet kan ikke lejes juleaften, nytårsaften samt i perioden 15. maj til 15. august grundet eksamensperiode og sommerferie.</div>
+                        <div class="ticker-item">Det koster ikke noget at leje fællesrummet, men man skal lægge et depositum på 1500 kr. til at dække eventuelle skader og mangler.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        /*
+@datasæt læses sådan:
+
+http://api.openweathermap.org/data/2.5/weather?
+q=Aarhus
+&lang=da
+&units=metric
+&appid=201d090c9cceacfc8931df89310ebfbb
+
+*/
+
+        // token from OpenWeatherMap
+        const appId = 'fd15cce358fdcd90479b999492916307';
+
+        // get the weather JSON data via query URI
+        fetch("http://api.openweathermap.org/data/2.5/weather?q=Aarhus&lang=da&units=metric&appid=" + appId).then(
+            response => {
+                return response.json(); // get weather data as JSON
+            }).then(data => {
+
+            // Work with JSON data here
+            console.log(data); // show what's in the json
+
+            // solnedgang
+            var sunsetMs = data.sys.sunset * 1000; // dato-objektet har brug for millisek. Derfor * 1000
+            var sunset = new Date(sunsetMs);
+
+            // Datoformattering @URI < https://www.w3schools.com/js/js_date_methods.asp >
+            var sunsetTime = sunset.getHours() + ":" + sunset.getMinutes();
+
+
+            console.log(data.weather[0].id);
+
+            var myBg = data.weather[0].id;
+
+            console.log(myBg);
+
+
+            if (myBg >= 200 && myBg <= 299) {
+                console.log("The number is 200 - Thunderstorm");
+                document.body.style.background = "#534f59 url('img/bg/bygninger-simpel.png') no-repeat";
+                ddocument.body.style.backgroundSize = "900px";
+                document.body.style.backgroundPosition = "center";
+
+                document.getElementById("skyer").style.display = "block";
+
+            } else if (myBg >= 300 && myBg <= 399) {
+                console.log("The number is 300 - Drizzle");
+                document.body.style.background = "#534f59 url('img/bg/bygninger-simpel.png') no-repeat";
+                document.body.style.backgroundSize = "900px";
+                document.body.style.backgroundPosition = "center";
+
+                document.getElementById("skyer").style.display = "block";
+
+            } else if (myBg >= 500 && myBg <= 599) {
+                console.log("The number is 500 - Rain");
+                document.body.style.background = "#534f59 url('img/bg/bygninger-simpel.png') no-repeat";
+                document.body.style.backgroundSize = "900px";
+                document.body.style.backgroundPosition = "center";
+
+                document.getElementById("myDIV").style.display = "block";
+                document.getElementById("skyer").style.display = "block";
+
+            } else if (myBg >= 600 && myBg <= 699) {
+                console.log("The number is 600 - Snow");
+                document.body.style.background = "#534f59 url('img/bg/bygninger-simpel.png') no-repeat";
+                document.body.style.backgroundSize = "900px";
+                document.body.style.backgroundPosition = "center";
+
+                document.getElementById("skyer").style.display = "block";
+
+            } else if (myBg >= 700 && myBg <= 790) {
+                console.log("The number is 700 - Atmosphere");
+                document.body.style.background = "#534f59 url('img/bg/bygninger-simpel.png') no-repeat";
+                document.body.style.backgroundSize = "900px";
+                document.body.style.backgroundPosition = "center";
+
+                document.getElementById("skyer").style.display = "block";
+
+            } else if (myBg >= 791 && myBg <= 800) {
+                console.log("The number is 800 - Clear");
+                document.body.style.background = "#534f59 url('img/bg/bygninger-simpel.png') no-repeat";
+                document.body.style.backgroundSize = "900px";
+                document.body.style.backgroundPosition = "center";
+
+                document.getElementById("skyer").style.display = "block";
+
+            } else {
+                console.log("The number is 801 - Clouds");
+                document.body.style.background = "#534f59 url('img/bg/bygninger-simpel.png') no-repeat";
+                document.body.style.backgroundSize = "900px";
+                document.body.style.backgroundPosition = "center";
+
+                document.getElementById("skyer").style.display = "block";
+            }
+
+
+
+
+        }).catch(err => {
+            // Do something with error here
+            console.log('There was an error ...');
+        });
+
+    </script>
+
+
+    <script src="myscripts.js"></script>
+    <script src="rain.js"></script>
+
+
+
+</body>
+
+</html>

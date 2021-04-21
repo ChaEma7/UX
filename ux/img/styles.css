@@ -1,0 +1,999 @@
+:root {
+    /* Farve palette */
+    --f-1: #669462;
+    --f-2: #bde0ba;
+    --f-3: #dde364;
+    --f-4: #e1e8b0;
+    --f-5: #f0f0f0;
+    --f-8: #534f59;
+
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+body {
+    overflow: hidden;
+
+}
+
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.weatherInfo {
+    border: 1px solid lawngreen;
+}
+
+
+hr {
+    border: 4px solid #dde364;
+}
+
+
+.vl {
+    border-left: 8px solid #dde364;
+    height: 320px;
+    position: absolute;
+    background-color: var(--f-4);
+    bottom: 45px;
+    left: 410px;
+
+}
+
+
+#logoH {
+    height: 100px;
+    position: absolute;
+    left: 400px;
+
+}
+
+#infobartop {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #534f59;
+}
+
+
+
+
+/* --------------------------------------- Ur og dato ---------------------------------------- */
+
+
+#uret {
+    text-align: center;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: var(--f-3);
+}
+
+
+
+#clock {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+
+}
+
+#date {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: -9px;
+    color: var(--f-4);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#date span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-weight: 800;
+    color: var(--f-3);
+
+}
+
+#sec {
+
+    display: none;
+    font-size: 60px;
+    margin-top: -28px;
+    font-weight: bold;
+    color: #F44336;
+}
+
+#sec span {
+
+    color: #4a4848;
+    font-size: 130px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+#sprog {
+    width: 115px;
+    position: absolute;
+    right: 150px;
+    padding: 0px;
+    display: flex;
+    margin-top: -15px
+}
+
+#sprog img {
+    padding: 0 10px;
+}
+
+
+
+footer {
+    background-color: #dde364;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+fContainer {}
+
+#footInfo {
+    position: absolute;
+    background-color: #dde364;
+    width: 150px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 30px;
+    z-index: 10;
+}
+
+
+
+/*
+.button {
+    
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ 
+}
+
+
+*/
+
+
+.info {
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    left: 10px;
+    top: 1130px;
+    display: block;
+    z-index: 99;
+
+}
+
+.maskot {
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding: 10px
+}
+
+
+
+
+
+
+
+.knap {
+    height: 100px;
+    width: 230px;
+    background-color: #bde0ba;
+    border: solid 1px #bde0ba;
+    box-shadow: 5px 5px 10px #1e1a22;
+    margin: 4px 2px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+figure {
+    height: 80px;
+    width: 80px;
+    background-color: #534f59;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+figure .ikon {
+    display: block;
+    margin: auto;
+    margin-top: 0.7rem;
+    /* aner ikke hvorfor den ikke ville centre det helt?? */
+}
+
+.knap-overskrift {
+    text-align: left;
+    color: #534f59;
+    font-size: 14pt;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+.knapP {
+    text-align: left;
+    position: absolute;
+    left: 5px;
+    bottom: 7px;
+    font-size: 12pt;
+    font-weight: 100;
+}
+
+
+.tal {
+    font-weight: 700;
+    font-size: 25pt;
+    color: #534f59;
+}
+
+.pil {
+    position: relative;
+    top: 95px;
+    display: block;
+    margin: auto;
+}
+
+/* --------------------------------------- Knap position ---------------------------------------- */
+.knap-motion {
+    position: fixed;
+    left: 290px;
+    top: 1040px;
+}
+
+.knap-aktiv1 {
+    position: fixed;
+    right: 120px;
+    top: 850px;
+}
+
+.knap-aktiv2 {
+    position: fixed;
+    left: 120px;
+    top: 350px;
+}
+
+.knap-fk {
+    position: fixed;
+    right: 115px;
+    top: 190px;
+}
+
+.knap-fr {
+    position: fixed;
+    right: 115px;
+    top: 350px;
+}
+
+/* ------------------------------------ Linjer -------------------------------- */
+
+
+.linje {
+    width: 5px;
+    background-color: var(--f-4);
+    box-shadow: 5px 5px 10px #1e1a22;
+    position: absolute;
+    display: block;
+    z-index: 99;
+}
+
+.l-aktiv1 {
+    height: 160px;
+    right: 235px;
+    bottom: 520px;
+}
+
+
+.l-aktiv2 {
+    height: 270px;
+    left: 300px;
+    top: 469px;
+}
+
+.l-motion {
+    height: 230px;
+    left: 400px;
+    bottom: 330px;
+}
+
+.l-f {
+    height: 350px;
+    right: 380px;
+    top: 250px;
+}
+
+.lille {
+    width: 25px;
+    height: 5px;
+    background-color: var(--f-4);
+    box-shadow: 5px 5px 10px #1e1a22;
+    border: none;
+    position: absolute;
+    display: block;
+    z-index: 99;
+}
+
+.l-lille1 {
+    top: 242px;
+    right: 359px;
+}
+
+.l-lille2 {
+    top: 398px;
+    right: 359px;
+}
+
+
+
+
+
+
+#infografik {
+    width: 80%;
+}
+
+
+
+/* The Modal (Ået) */
+.modalx {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 999;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-contentx {
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 350px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+
+
+}
+
+/* The Close Button */
+.closex {
+    color: #aaaaaa;
+    float: right;
+    font-size: 50pt;
+    font-weight: bold;
+}
+
+.closex:hover,
+.closex:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 100;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 30px;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+
+}
+
+/* The Close Button */
+.close {
+    color: var(--f-2);
+    float: right;
+    font-size: 50pt;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Modal Header */
+
+
+
+.modal-header {
+    padding: 2px 30px;
+    height: 300px;
+    width: 100%;
+    margin-left: -30px;
+    background-image: url(img/facade.png);
+    background-size: cover;
+}
+
+
+
+.mHeader {
+    font-size: 250px;
+    color: var(--f-3);
+    margin-left: 20px;
+}
+
+.mPa {
+    font-size: 20pt;
+    color: var(--f-3);
+    margin-left: -20px;
+
+}
+
+.mPa1 {
+    font-size: 16pt;
+    color: var(--f-8);
+    margin-left: -20px;
+    font-weight: 100;
+}
+
+.mPa1 p strong {
+    font-size: 20pt;
+}
+
+.mPa2 {
+    text-align: center;
+    font-size: 12pt;
+    font-weight: 200;
+    color: var(--f-8);
+
+}
+
+
+
+
+/* Modal Body */
+.modal-body {
+    padding: 20px 16px;
+    display: block;
+
+}
+
+
+.mHeader2 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 900;
+    color: var(--f-8);
+}
+
+
+
+
+.mHeader3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 26pt;
+    text-align: center;
+    padding: 10px 0 20px 0;
+    color: var(--f-8);
+}
+
+
+ul {
+    font-family: 'Montserrat', sans-serif;
+    list-style: circle;
+    color: var(--f-8);
+}
+
+li {
+    padding: 4px;
+    font-weight: 500;
+    font-size: 16pt;
+}
+
+.regl-liste {
+    margin-left: 70px;
+}
+
+/* Modal Footer */
+.modal-footer {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 16px;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+
+
+.imgIcon {
+    width: 90px;
+    padding: 20px;
+}
+
+
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 200px;
+    padding-top: 0;
+    border: 25px solid rgba(221, 227, 100, 1);
+    width: 80%;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    background-color: #fefefe;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*   rain      */
+
+#canvas {
+    position: absolute;
+    display: none;
+}
+
+
+
+
+
+#skyer {
+    display: none;
+}
+
+.clouds {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+
+}
+
+.clouds .cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://media.discordapp.net/attachments/708322953649193040/709058890733584484/p-trans.png');
+    background-size: 200px 150px;
+    background-repeat: no-repeat;
+}
+
+.clouds .cloud.cloud1 {
+    animation: animate 230s linear infinite;
+    z-index: 80;
+    opacity: 1;
+    animation-delay: 0s;
+}
+
+.clouds .cloud.cloud2 {
+    animation: animate2 170s linear infinite;
+    z-index: 79;
+    opacity: 0.5;
+    top: 10px;
+    background-position-x: -200px;
+    animation-delay: 5s;
+}
+
+.clouds .cloud.cloud3 {
+    animation: animate3 160s linear infinite;
+    z-index: 78;
+    opacity: 0.7;
+    top: 5px;
+    background-position-x: 1500px;
+    animation-delay: 1s;
+}
+
+.clouds .cloud.cloud4 {
+    animation: animate4 225s linear infinite;
+    z-index: 77;
+    opacity: 0.4;
+    top: 30px;
+    background-position-x: 1300px;
+    animation-delay: .5s;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: -200px;
+    }
+
+    100% {
+        background-position-x: 1500px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: -200px;
+    }
+
+    100% {
+        background-position-x: 1500px;
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        background-position-x: 1500px;
+    }
+
+    100% {
+        background-position-x: -200px;
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        background-position-x: 1300px;
+    }
+
+    100% {
+        background-position-x: -200px;
+    }
+}
+
+.airfy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60px;
+    z-index: 1001;
+    animation: float 1.5s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+@keyframes float {
+    from {
+        top: 50%;
+    }
+
+    to {
+        top: 55%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* OUTER CONTAINER
+
+https://code-boxx.com/html-css-news-ticker-horizontal-vertical/
+
+*/
+.tcontainer {
+    padding-top: 30px;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+    /* Hide scroll bar */
+
+}
+
+/* MIDDLE CONTAINER */
+.ticker-wrap {
+    width: 100%;
+    padding-left: 100%;
+    /* Push contents to right side of screen */
+    background-color: #dde364;
+
+}
+
+/* INNER CONTAINER */
+@keyframes ticker {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.ticker-move {
+    /* Basically move items from right side of screen to left in infinite loop */
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 120s;
+}
+
+.ticker-move:hover {
+    animation-play-state: paused;
+    /* Pause scroll on mouse hover */
+}
+
+/* ITEMS */
+.ticker-item {
+    display: inline-block;
+    /* Lay items in a horizontal line */
+    padding: 1rem 10rem;
+    height: 30px;
+    background-color: var(--f-4);
+    margin-top: -10px;
+}
